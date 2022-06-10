@@ -1,0 +1,154 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13379840500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Youtube login page",
+            "match": {
+              "location": "LoginStepsDefinitions.user_is_on_Youtube_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7565756800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepsDefinitions.define()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "1 User should be able to login with valid credentials",
+        "description": "",
+        "id": "login-functionality;1-user-should-be-able-to-login-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3334833700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters username as \"johnyfable\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "johnyfable",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_enters_username_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3292857200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters password as \"Tableman1!!ok!5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tableman1!!ok!5",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_enters_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4594534300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User goes to video as \"https://youtu.be/VwWU6CZ5lJE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://youtu.be/VwWU6CZ5lJE",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_goes_to_video_as(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10747419500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "leaves comment on video as \"Great matches yall! Wanna see more\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Great matches yall! Wanna see more",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginStepsDefinitions.leaves_comment_on_video_as(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Smoke"
+          },
+          {
+            "line": 6,
+            "name": "@GoodLoginScenario"
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "features/LoginfromDB.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Smoke"
+      }
+    ]
+  }
+]
