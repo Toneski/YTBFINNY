@@ -65,7 +65,9 @@ public class TestBase {
 
 	}
 
-	public void TearDown() {
+	public void TearDown() throws InterruptedException {
+		
+		
 		driver.close();
 		driver.quit();
 	}
@@ -95,6 +97,9 @@ public void dismiss() {
 	driver.switchTo().alert().accept();
 }
 
-
+public void dwait() throws InterruptedException {
+	
+	driver.wait(30);
+}
 
 }
