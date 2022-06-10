@@ -1,4 +1,4 @@
-@Smoke
+@a
 Feature:  Login functionality
 Background:
 	Given User is on Youtube login page
