@@ -8,7 +8,7 @@ formatter.feature({
   "tags": [
     {
       "line": 1,
-      "name": "@Smoke"
+      "name": "@Smoke2"
     }
   ]
 });
@@ -96,7 +96,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 6775686100,
+  "duration": 7482696300,
   "status": "passed"
 });
 formatter.background({
@@ -115,7 +115,7 @@ formatter.match({
   "location": "LoginStepsDefinitions.user_is_on_Youtube_login_page()"
 });
 formatter.result({
-  "duration": 12067356000,
+  "duration": 13418115000,
   "status": "passed"
 });
 formatter.scenario({
@@ -128,7 +128,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 1,
-      "name": "@Smoke"
+      "name": "@Smoke2"
     },
     {
       "line": 6,
@@ -178,7 +178,7 @@ formatter.match({
   "location": "LoginStepsDefinitions.user_enters_username_as(String)"
 });
 formatter.result({
-  "duration": 3699481200,
+  "duration": 3333089400,
   "status": "passed"
 });
 formatter.match({
@@ -191,7 +191,7 @@ formatter.match({
   "location": "LoginStepsDefinitions.user_enters_password(String)"
 });
 formatter.result({
-  "duration": 3290291300,
+  "duration": 3341530100,
   "status": "passed"
 });
 formatter.match({
@@ -204,7 +204,7 @@ formatter.match({
   "location": "LoginStepsDefinitions.user_goes_to_video_as(String)"
 });
 formatter.result({
-  "duration": 7743343000,
+  "duration": 10688546000,
   "status": "passed"
 });
 formatter.match({
@@ -217,11 +217,11 @@ formatter.match({
   "location": "LoginStepsDefinitions.teardown_as(int)"
 });
 formatter.result({
-  "duration": 36877006500,
+  "duration": 36891826700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4058312400,
+  "duration": 4031799000,
   "status": "passed"
 });
 formatter.background({
@@ -240,7 +240,7 @@ formatter.match({
   "location": "LoginStepsDefinitions.user_is_on_Youtube_login_page()"
 });
 formatter.result({
-  "duration": 11750596400,
+  "duration": 17221689200,
   "status": "passed"
 });
 formatter.scenario({
@@ -253,7 +253,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 1,
-      "name": "@Smoke"
+      "name": "@Smoke2"
     },
     {
       "line": 6,
@@ -303,7 +303,7 @@ formatter.match({
   "location": "LoginStepsDefinitions.user_enters_username_as(String)"
 });
 formatter.result({
-  "duration": 3315123800,
+  "duration": 3246127200,
   "status": "passed"
 });
 formatter.match({
@@ -316,7 +316,7 @@ formatter.match({
   "location": "LoginStepsDefinitions.user_enters_password(String)"
 });
 formatter.result({
-  "duration": 3334324000,
+  "duration": 3257170300,
   "status": "passed"
 });
 formatter.match({
@@ -329,132 +329,7 @@ formatter.match({
   "location": "LoginStepsDefinitions.user_goes_to_video_as(String)"
 });
 formatter.result({
-  "duration": 8332746800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "32",
-      "offset": 12
-    }
-  ],
-  "location": "LoginStepsDefinitions.teardown_as(int)"
-});
-formatter.result({
-  "duration": 36914646200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 4059795700,
-  "status": "passed"
-});
-formatter.background({
-  "line": 3,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 4,
-  "name": "User is on Youtube login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginStepsDefinitions.user_is_on_Youtube_login_page()"
-});
-formatter.result({
-  "duration": 11434848200,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 17,
-  "name": "1 User should be able to login with valid credentials",
-  "description": "",
-  "id": "login-functionality;1-user-should-be-able-to-login-with-valid-credentials;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@Smoke"
-    },
-    {
-      "line": 6,
-      "name": "@GoodLoginScenario"
-    }
-  ]
-});
-formatter.step({
-  "line": 8,
-  "name": "User enters username as \"johnyfable\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "User enters password as \"Tableman1!!ok!5\"",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "User goes to video as \"https://youtu.be/pN8LTZljvpU\"",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "teardown as 32",
-  "matchedColumns": [
-    3
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "johnyfable",
-      "offset": 25
-    }
-  ],
-  "location": "LoginStepsDefinitions.user_enters_username_as(String)"
-});
-formatter.result({
-  "duration": 3431279300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Tableman1!!ok!5",
-      "offset": 25
-    }
-  ],
-  "location": "LoginStepsDefinitions.user_enters_password(String)"
-});
-formatter.result({
-  "duration": 3343773900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "https://youtu.be/pN8LTZljvpU",
-      "offset": 23
-    }
-  ],
-  "location": "LoginStepsDefinitions.user_goes_to_video_as(String)"
-});
-formatter.result({
-  "duration": 6889959100,
+  "duration": 9406838300,
   "status": "passed"
 });
 formatter.match({
