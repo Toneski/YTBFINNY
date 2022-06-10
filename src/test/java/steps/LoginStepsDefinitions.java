@@ -1,5 +1,7 @@
 package steps;
 
+import java.io.IOException;
+
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -7,7 +9,7 @@ import cucumber.api.java.en.When;
 import pages.TestBase;
 
 public class LoginStepsDefinitions extends TestBase {
-
+ String comment;
 	@Before
 	public void define() {
 		driver = initDriver();
@@ -23,10 +25,10 @@ public class LoginStepsDefinitions extends TestBase {
 	}
 
 	@When("^User enters username as \"([^\"]*)\"$")
-	public void user_enters_username_as(String username) throws InterruptedException {
+	public void user_enters_username_as(String username) throws InterruptedException, IOException {
 		sendByXpath("//input[@id='identifierId']", username);
 		clickByXpath("//span[text()='Next']/parent::*");
-
+		comment = readConfig(username);
 		Thread.sleep(3000);
 	}
 
@@ -49,12 +51,19 @@ Thread.sleep(4000);
 
 
 	}
-	@Then("^leaves comment on video as \"([^\"]*)\"$")
-	public void leaves_comment_on_video_as(String comment) throws Throwable {
-		Thread.sleep(4000);
+	
+	@Then("^Likes the video$")
+	public void likes_the_video() throws Throwable {
+		Thread.sleep(6000);
 		clickByXpath("//div[@id='info']//ytd-toggle-button-renderer[1]//a[1]//yt-icon-button[1]//button[1]//yt-icon[1]\r\n");
+	}
+	
+	@Then("^leaves comment on video")
+	public void leaves_comment_on_video(String a) throws Throwable {
+		//*[@id="contenteditable-textarea"]
+		//"//*[@id='simplebox-placeholder']"
 		Thread.sleep(5000);
-		clickByXpath("//*[@id='simplebox-placeholder']");
+		clickByXpath("\"//*[@id='contenteditable-root']");
 		Thread.sleep(5000);
 
 		sendByXpath("//*[@id='contenteditable-root']",comment);

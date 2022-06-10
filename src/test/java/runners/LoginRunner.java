@@ -14,9 +14,9 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "classpath:features",
 		glue = "steps",
-		tags ="@Smoke2",
+		tags ="@Smoke1",
 		monochrome = true,
-		dryRun=false,
+		dryRun=true,
 		plugin= {
 				"pretty",
 				"html:target/cucumber","json:target/cucumber.json"
