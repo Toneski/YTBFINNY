@@ -1,9 +1,12 @@
 package pages;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -20,7 +23,7 @@ import org.openqa.selenium.support.ui.Select;
 public class TestBase {
 
 	public static WebDriver driver;
-
+String url;
 	public static WebDriver initDriver() {
 
 		ChromeOptions options = new ChromeOptions();
@@ -35,6 +38,20 @@ public class TestBase {
 		return driver;
 	}
 
+	public String readConfig(String a) throws IOException {
+		// FileReader //InputStream //Buffered //Scanner
+		
+		Properties prop = new Properties();
+			InputStream input = new FileInputStream("src\\main\\java\\config\\config.properties");
+			prop.load(input);
+			String comment = prop.getProperty(a);
+			
+		
+		return comment;
+	}
+	
+	
+	
 	public static void takeScreenshot(WebDriver driver, String screenShotName) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File sourcefile = ts.getScreenshotAs(OutputType.FILE);

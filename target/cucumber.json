@@ -1,0 +1,518 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "User is on Youtube login page",
+            "match": {
+              "location": "LoginStepsDefinitions.user_is_on_Youtube_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "1 User should be able to login with valid credentials",
+        "description": "",
+        "id": "login-functionality;1-user-should-be-able-to-login-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User enters username as \"johnyfable\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "johnyfable",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_enters_username_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User enters password as \"Tableman1!!ok!5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tableman1!!ok!5",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_enters_password(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User goes to video as \"https://youtu.be/AY9eeyYiIeo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://youtu.be/AY9eeyYiIeo",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_goes_to_video_as(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "leaves comment on video",
+            "match": {
+              "location": "LoginStepsDefinitions.leaves_comment_on_video(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "teardown as 30",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepsDefinitions.teardown_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Smoke1"
+          },
+          {
+            "line": 6,
+            "name": "@GoodLoginScenario"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "User is on Youtube login page",
+            "match": {
+              "location": "LoginStepsDefinitions.user_is_on_Youtube_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "1 User should be able to login with valid credentials",
+        "description": "",
+        "id": "login-functionality;1-user-should-be-able-to-login-with-valid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User enters username as \"skimbo597\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "skimbo597",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_enters_username_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User enters password as \"Tableman1!!ok!5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tableman1!!ok!5",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_enters_password(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User goes to video as \"https://youtu.be/AY9eeyYiIeo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://youtu.be/AY9eeyYiIeo",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_goes_to_video_as(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "leaves comment on video",
+            "match": {
+              "location": "LoginStepsDefinitions.leaves_comment_on_video(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "teardown as 30",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepsDefinitions.teardown_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Smoke1"
+          },
+          {
+            "line": 6,
+            "name": "@GoodLoginScenario"
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "features/Comment.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Smoke1"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "User is on Youtube login page",
+            "match": {
+              "location": "LoginStepsDefinitions.user_is_on_Youtube_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "1 User should be able to login with valid credentials",
+        "description": "",
+        "id": "login-functionality;1-user-should-be-able-to-login-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User enters username as \"johnyfable\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "johnyfable",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_enters_username_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User enters password as \"Tableman1!!ok!5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tableman1!!ok!5",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_enters_password(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User goes to video as \"https://youtu.be/AY9eeyYiIeo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://youtu.be/AY9eeyYiIeo",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_goes_to_video_as(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "Likes the video",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "teardown as 30",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepsDefinitions.teardown_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Smoke1"
+          },
+          {
+            "line": 6,
+            "name": "@GoodLoginScenario"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "User is on Youtube login page",
+            "match": {
+              "location": "LoginStepsDefinitions.user_is_on_Youtube_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "1 User should be able to login with valid credentials",
+        "description": "",
+        "id": "login-functionality;1-user-should-be-able-to-login-with-valid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User enters username as \"skimbo597\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "skimbo597",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_enters_username_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User enters password as \"Tableman1!!ok!5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tableman1!!ok!5",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_enters_password(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User goes to video as \"https://youtu.be/AY9eeyYiIeo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://youtu.be/AY9eeyYiIeo",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_goes_to_video_as(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "Likes the video",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "teardown as 30",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepsDefinitions.teardown_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Smoke1"
+          },
+          {
+            "line": 6,
+            "name": "@GoodLoginScenario"
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "features/Like.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Smoke1"
+      }
+    ]
+  }
+]
