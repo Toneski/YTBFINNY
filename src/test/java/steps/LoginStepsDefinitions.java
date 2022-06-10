@@ -10,14 +10,15 @@ import pages.TestBase;
 
 public class LoginStepsDefinitions extends TestBase {
  String comment;
+ String url;
 	@Before
 	public void define() {
 		driver = initDriver();
 	}
 
 	@Given("^User is on Youtube login page$")
-	public void user_is_on_Youtube_login_page() throws InterruptedException {
-
+	public void user_is_on_Youtube_login_page() throws InterruptedException, IOException {
+		String url = readurl();
 		driver.get("https://www.youtube.com/");
 
 		clickByXpath("/html/body/ytd-app/div[1]/div/ytd-masthead/div[3]/div[3]/div[2]/ytd-button-renderer/a/tp-yt-paper-button");
@@ -40,11 +41,11 @@ public class LoginStepsDefinitions extends TestBase {
 		Thread.sleep(3000);
 	}
 
-	@Then("^User goes to video as \"([^\"]*)\"$")
-	public void user_goes_to_video_as(String vid) throws Throwable {
+	@Then("^User goes to video")
+	public void user_goes_to_video() throws Throwable {
 
-		
-		gotov(vid);
+		String url = readurl();
+		gotov(url);
 Thread.sleep(4000);
 
 		
@@ -54,16 +55,17 @@ Thread.sleep(4000);
 	
 	@Then("^Likes the video$")
 	public void likes_the_video() throws Throwable {
-		Thread.sleep(6000);
+		Thread.sleep(7000);
 		clickByXpath("//div[@id='info']//ytd-toggle-button-renderer[1]//a[1]//yt-icon-button[1]//button[1]//yt-icon[1]\r\n");
 	}
 	
 	@Then("^leaves comment on video")
-	public void leaves_comment_on_video(String a) throws Throwable {
+	public void leaves_comment_on_video() throws Throwable {
 		//*[@id="contenteditable-textarea"]
 		//"//*[@id='simplebox-placeholder']"
 		Thread.sleep(5000);
-		clickByXpath("\"//*[@id='contenteditable-root']");
+		
+		clickByXpath("//*[@id='simplebox-placeholder']");
 		Thread.sleep(5000);
 
 		sendByXpath("//*[@id='contenteditable-root']",comment);
@@ -79,7 +81,10 @@ Thread.sleep(4000);
 		Thread.sleep(a);
 		TearDown();
 	}
-
+	@Then("^wait$")
+	public void waitss() {
+		
+	}
 //	@After
 //	public void teardown() throws InterruptedException {
 //		Thread.sleep(32000);

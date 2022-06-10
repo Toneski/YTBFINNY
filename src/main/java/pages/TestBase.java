@@ -50,7 +50,17 @@ String url;
 		return comment;
 	}
 	
-	
+	public String readurl() throws IOException {
+		// FileReader //InputStream //Buffered //Scanner
+		
+		Properties prop = new Properties();
+			InputStream input = new FileInputStream("src\\main\\java\\config\\config.properties");
+			prop.load(input);
+			String url  = prop.getProperty("url");
+			
+		
+		return url;
+	}
 	
 	public static void takeScreenshot(WebDriver driver, String screenShotName) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
