@@ -46,7 +46,7 @@ public class LoginStepsDefinitions extends TestBase {
 
 		String url = readurl();
 		gotov(url);
-Thread.sleep(4000);
+Thread.sleep(2000);
 
 		
 
@@ -55,7 +55,7 @@ Thread.sleep(4000);
 	
 	@Then("^Likes the video$")
 	public void likes_the_video() throws Throwable {
-		Thread.sleep(7000);
+		Thread.sleep(10000);
 		clickByXpath("//div[@id='info']//ytd-toggle-button-renderer[1]//a[1]//yt-icon-button[1]//button[1]//yt-icon[1]\r\n");
 	}
 	
@@ -63,13 +63,13 @@ Thread.sleep(4000);
 	public void leaves_comment_on_video() throws Throwable {
 		//*[@id="contenteditable-textarea"]
 		//"//*[@id='simplebox-placeholder']"
-		Thread.sleep(5000);
+		Thread.sleep(12000);
 		
 		clickByXpath("//*[@id='simplebox-placeholder']");
-		Thread.sleep(5000);
+		Thread.sleep(8000);
 
 		sendByXpath("//*[@id='contenteditable-root']",comment);
-		Thread.sleep(6000);
+		Thread.sleep(5000);
 
 		clickByXpath("/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/ytd-comments/ytd-item-section-renderer/div[1]/ytd-comments-header-renderer/div[5]/ytd-comment-simplebox-renderer/div[3]/ytd-comment-dialog-renderer/ytd-commentbox/div[2]/div/div[4]/div[5]/ytd-button-renderer[2]/a/tp-yt-paper-button");
 		//*[@id="button"]
@@ -81,8 +81,9 @@ Thread.sleep(4000);
 		Thread.sleep(a);
 		TearDown();
 	}
-	@Then("^wait$")
+	@Then("^waitss$")
 	public void waitss() {
+	
 		
 	}
 //	@After
