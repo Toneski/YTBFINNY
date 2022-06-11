@@ -13,5 +13,5 @@ Scenario Outline: 1 User should be able to login with valid credentials
 	Then waitss
 Examples:
 |username|
-|johnyfable|
 |skimbo597|
+|johnyfable|
